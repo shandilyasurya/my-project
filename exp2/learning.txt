@@ -1,0 +1,18 @@
+What it Does:
+1.Displays a balance.
+2.Shows two action buttons: Deposit and Withdraw.
+3.Works on both desktop and mobile devices.
+
+HTML Overview:
+
+1.Uses a main container to center the content.
+2.Displays balance in bold, green text.
+3.Has two buttons inside a flex container.
+
+CSS Overview:
+
+1.Uses Flexbox to center content and align items.
+2.Adds padding, border, background color, and spacing.
+3.Green and red colors for the buttons.
+Uses a media query to make layout vertical on small screens (mobile-friendly).
+
