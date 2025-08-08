@@ -1,0 +1,21 @@
+Project: Admin Dashboard with CSS Grid Layout and Theme Switching -
+
+This project is a simple admin dashboard webpage. It uses CSS Grid to organize the page layout into sections like header, navigation, main content, and footer. It also includes a dark mode toggle that changes the colors of the page using just CSS.
+
+HTML Explanation -
+
+The HTML file sets up the page structure.
+It has a hidden checkbox to switch between light and dark mode.
+The main parts are:
+Header with the title and dark mode label.
+Navigation menu with links to Home, User, and Settings.
+Main section with a welcome message.
+Footer with a copyright notice.
+
+CSS Explanation - 
+
+The CSS uses variables for colors so it’s easy to switch themes.
+The layout is done with CSS Grid dividing the page into columns and rows.
+When the checkbox is checked, the CSS variables change to dark colors for the dark mode.
+Each section (header, nav, main, footer) has styles for borders, colors, and spacing.
+The dark mode toggle works without JavaScript by using the checkbox state in CSS.
