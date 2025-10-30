@@ -1,1 +1,1 @@
-console.log('Hello, world!');
+console.log("🚀 CI/CD Demo running successfully!");
