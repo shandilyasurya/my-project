@@ -1,0 +1,124 @@
+💡 Project Title
+
+AI-Powered Chatbot (Nova) – Intelligent Conversational Assistant using MERN and Gemini API
+
+🧠 Objective
+
+To design and integrate an AI-powered chatbot into a full-stack MERN application with a provider-agnostic Node.js backend that can communicate with either Google Gemini API or Dialogflow.
+The chatbot provides dynamic, context-aware responses, supports custom prompts, and maintains conversation history per user.
+
+⚙️ Tech Stack
+
+Frontend: React.js, TailwindCSS, Framer Motion
+Backend: Node.js, Express.js
+Database: MongoDB (Mongoose)
+AI Model: Google Gemini 2.0 / 2.5 Flash via @google/genai SDK
+Environment Management: dotenv
+Communication: Axios
+Styling: Tailwind CSS with custom gradients and glassmorphism
+Animation: Framer Motion
+
+🔍 Key Features
+
+💬 Smart AI Responses
+
+Uses Google Gemini API to dynamically generate conversational replies.
+
+Falls back to predefined responses for general or casual inputs.
+
+🧑‍💻 User & Bot Message Logging
+
+Stores each user and bot message in MongoDB for session persistence.
+
+Each entry includes timestamps, sender info, and conversation metadata.
+
+⚙️ Provider-Agnostic Backend
+
+The Express backend can easily switch between Gemini API or Dialogflow without code restructuring.
+
+🔐 Secure Environment Setup
+
+API keys stored safely using .env and accessed via process.env.GEMINI_API_KEY.
+
+🌈 Interactive UI (Nova)
+
+Responsive and minimal chat interface with animated message bubbles.
+
+Built with TailwindCSS + Framer Motion for smooth transitions and typing feedback.
+
+Glassmorphism theme, gradient buttons, and pulsing background effects.
+
+⚡ Optimized Response Handling
+
+Uses a temporary “Nova is thinking…” placeholder while the AI processes requests.
+
+Smoothly replaces it with actual output once the response is received.
+
+🧩 Modular Architecture
+
+Clean code separation with controllers, models, routes, and frontend components.
+
+💾 Session Management
+
+Future-ready for user-specific sessions and message context preservation.
+
+🧱 Project Structure
+AI-Chatbot/
+│
+├── backend/
+│   ├── controllers/
+│   │   └── chatbot.message.js
+│   ├── models/
+│   │   ├── bot.model.js
+│   │   └── user.model.js
+│   ├── routes/
+│   │   └── message.routes.js
+│   ├── .env
+│   ├── index.js
+│   └── package.json
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── Bot.jsx
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── tailwind.config.js
+│   ├── vite.config.js
+│   └── package.json
+│
+└── description.txt
+
+🚀 How It Works
+
+The user enters a query in the Nova interface.
+
+The message is sent to the backend API endpoint /bot/v1/message.
+
+The server validates input, logs it, and checks for a predefined reply.
+
+If no match is found, it uses Gemini API to generate a contextual response.
+
+The backend saves both user and bot messages in MongoDB.
+
+The frontend dynamically displays both messages with smooth animations.
+
+🧩 Future Enhancements
+
+🗣️ Add speech-to-text and text-to-speech features.
+
+🌐 Integrate multi-language support (Gemini multilingual models).
+
+🔄 Enable streaming responses (SSE/WebSocket) for real-time word-by-word replies.
+
+🔐 Add authentication to manage per-user chat history.
+
+📊 Implement chat analytics dashboard for admin insights.
+
+👨‍💻 Developed By
+
+Suryansh Shandilya
+Under the project: AI-Powered Conversational Bot (Nova)
+Built as part of a Machine Learning / AI System Integration practical assignment.
